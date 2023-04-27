@@ -67,7 +67,7 @@ floating_modifier $mod
 exec_always --no-startup-id nitrogen --restore &
 
 # Start picom
-exec_always --no-startup-id picom
+#exec_always --no-startup-id picom
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
@@ -84,6 +84,9 @@ bindsym $mod+p exec rofi -show drun
 
 # switch between windows (rofi)
 bindsym mod1+Tab exec rofi -show window
+
+# lauch powermenu (rofi)
+bindsym $mod+m exec ~/.config/rofi/powermenu.sh
 
 # launch nemo file-explorer
 bindsym mod1+n exec --no-startup-id thunar &
@@ -153,17 +156,6 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
-
-
-#set $ws2 "2:  "
-#set $ws3 "3: "
-#set $ws4 "4:  "
-#set $ws5 "5:  "
-#set $ws6 "6:  "
-#set $ws7 "7:  "
-#set $ws8 "8:  "
-#set $ws9 "9:  "
-#set $ws10 "10:  "
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -265,7 +257,8 @@ set $focused-border		#000000
 set $inactive-bg-color  	#000000
 set $text-color 		#f3f4f5
 set $inactive-text-color 	#f3f4f5
-set $focused-window		#5294E2
+#set $focused-window		#5294E2
+set $focused-window		#458588
 set $urgent-bg-color 		#E53935
 set $active-wokspace  		#2f43FF
 set $inactive-workspace 	#2f345d

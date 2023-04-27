@@ -1,6 +1,6 @@
 configuration{
     modi: ["drun", "window", "run"];
-    icon-theme: "Moka";
+    icon-theme: "Papirus-Dark";
     show-icons: true;
     terminal: "alacritty";
     drun-display-format: "{icon} {name}";
@@ -8,4 +8,5 @@ configuration{
     disable-history: false;
     sidebar-mode: false;
 }
-@theme "/usr/share/rofi/themes/DarkBlue.rasi"
+//@theme "/usr/share/rofi/themes/DarkBlue.rasi"
+@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
